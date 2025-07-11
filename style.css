@@ -1,41 +1,42 @@
-/* Base Reset */
+/* Reset */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Global */
 body {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: #f2f4f8;
-  color: #333;
+  background: #f0f2f5;
+  color: #1f1f1f;
   line-height: 1.6;
 }
 
 .container {
-  max-width: 900px;
-  margin: 40px auto;
+  max-width: 950px;
+  margin: 50px auto;
   padding: 30px;
-  background-color: #fff;
+  background: #ffffff;
   border-radius: 16px;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 10px 35px rgba(0, 0, 0, 0.05);
 }
 
 /* Header */
 header {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
 }
 
 h1 {
-  font-size: 2.5em;
+  font-size: 2.8rem;
   color: #0073e6;
 }
 
 .subtitle {
-  font-size: 1.2em;
+  font-size: 1.25rem;
   color: #555;
-  margin-top: 10px;
+  margin-top: 8px;
 }
 
 /* Sections */
@@ -44,31 +45,31 @@ section {
 }
 
 h2 {
-  color: #333;
-  font-size: 1.8em;
-  margin-bottom: 15px;
-  border-bottom: 2px solid #0073e6;
-  display: inline-block;
-  padding-bottom: 5px;
+  font-size: 1.8rem;
+  margin-bottom: 12px;
+  color: #222;
+  border-left: 5px solid #0073e6;
+  padding-left: 12px;
 }
 
 h3 {
-  margin-top: 25px;
-  font-size: 1.3em;
+  margin-top: 30px;
+  font-size: 1.3rem;
   color: #0073e6;
 }
 
 ul {
-  list-style: disc;
-  margin-left: 25px;
+  list-style-type: disc;
+  margin-left: 30px;
   margin-top: 10px;
 }
 
 ul li {
   margin-bottom: 10px;
+  color: #333;
 }
 
-/* Social Links */
+/* Social & Resume */
 .connect {
   text-align: center;
 }
@@ -76,7 +77,8 @@ ul li {
 .social-links {
   display: flex;
   justify-content: center;
-  gap: 30px;
+  flex-wrap: wrap;
+  gap: 25px;
   margin: 20px 0;
 }
 
@@ -84,8 +86,8 @@ ul li {
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #0073e6;
   text-decoration: none;
+  color: #0073e6;
   font-weight: 500;
   transition: color 0.2s ease;
 }
@@ -111,11 +113,11 @@ ul li {
   padding: 12px 24px;
   background-color: #0073e6;
   color: #fff;
-  font-weight: bold;
   border-radius: 8px;
+  font-weight: bold;
   text-decoration: none;
   margin-top: 10px;
-  transition: background-color 0.3s;
+  transition: background-color 0.3s ease;
 }
 
 .resume-button:hover {
@@ -125,20 +127,28 @@ ul li {
 /* Footer */
 footer {
   text-align: center;
-  margin-top: 50px;
-  font-size: 0.9em;
+  font-size: 0.9rem;
   color: #999;
+  margin-top: 50px;
 }
 
 /* Responsive */
-@media screen and (max-width: 600px) {
+@media (max-width: 600px) {
   .social-links {
     flex-direction: column;
-    gap: 15px;
+    align-items: center;
   }
 
   h1 {
-    font-size: 2em;
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.4rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
   }
 
   .resume-button {
