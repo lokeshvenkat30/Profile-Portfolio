@@ -1,64 +1,68 @@
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
-  background: #1a1a1a;
-  color: #f2f2f2;
-}
-
-.container {
-  max-width: 800px;
-  margin: 60px auto;
+  background-color: #000;
+  color: #33ff33;
+  font-family: 'Courier New', Courier, monospace;
   padding: 20px;
-  background-color: #2c2c2c;
-  border-radius: 15px;
-  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
 }
 
-h1 {
-  font-size: 2.5em;
-  margin-bottom: 10px;
+.terminal {
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #111;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 0 10px #00ff00;
+}
+
+.green {
+  color: #00ff00;
+  font-weight: bold;
+}
+
+.white {
+  color: #eee;
 }
 
 .highlight {
-  color: #00ffd5;
+  color: #00ffff;
+  font-weight: bold;
 }
 
-h2 {
-  color: #ffcc00;
-  margin-top: 40px;
+.output {
+  color: #ccc;
+  margin-left: 20px;
+  margin-bottom: 10px;
 }
 
-ul {
+ul.output {
   list-style: none;
-  padding: 0;
+  padding-left: 30px;
 }
 
-li::before {
-  content: "⚡ ";
-  color: #00ffd5;
+ul.output li::before {
+  content: "➜ ";
+  color: #00ff00;
 }
 
 a {
-  color: #00ffd5;
+  color: #00ffff;
   text-decoration: none;
-  margin-right: 10px;
 }
 
 a:hover {
   text-decoration: underline;
 }
 
-.resume-button {
+.resume {
   display: inline-block;
-  margin-top: 15px;
-  padding: 10px 20px;
-  background-color: #00ffd5;
-  color: #000;
-  border-radius: 8px;
+  margin-top: 10px;
+  padding: 6px 12px;
+  background: #00ff00;
+  color: black;
+  border-radius: 5px;
   font-weight: bold;
 }
 
-.resume-button:hover {
-  background-color: #00bfa6;
+.resume:hover {
+  background: #00cc00;
 }
