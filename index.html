@@ -1,29 +1,36 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Thala Portfolio</title>
+  <title>Thala Terminal Portfolio</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="container">
-    <h1>Vanakkam da mapla, I'm <span class="highlight">Loki</span></h1>
-    <h3>AWS | Linux | IT Admin</h3>
-    <p>I’m an AWS & IT Admin passionate about building cloud infrastructure and automation. I love servers, CLI, and thala-level scripting.</p>
-    
-    <h2>Skills</h2>
-    <ul>
+  <div class="terminal">
+    <pre class="green">thala@aws-admin:~$</pre> <span class="white">echo "Vanakkam da mapla, I'm <span class="highlight">Loki</span>"</span><br><br>
+
+    <pre class="green">thala@aws-admin:~$</pre> <span class="white">whoami</span><br>
+    <p class="output">AWS | Linux | IT Admin</p>
+
+    <pre class="green">thala@aws-admin:~$</pre> <span class="white">cat about.txt</span>
+    <p class="output">
+      I’m an AWS & IT Admin passionate about building cloud infra and automation.<br>
+      I love servers, CLI, and thala-level scripting.
+    </p>
+
+    <pre class="green">thala@aws-admin:~$</pre> <span class="white">ls skills</span>
+    <ul class="output">
       <li>AWS (EC2, S3, VPC)</li>
       <li>Linux / Ubuntu / RHEL</li>
       <li>Windows Server / AD / GPO</li>
       <li>Apache / Git / CLI</li>
     </ul>
 
-    <h2>Connect with Me</h2>
-    <a href="https://github.com/lokeshvenkat30" target="_blank">GitHub</a> |
-    <a href="https://www.linkedin.com/in/lokesh-s-v-48444814a/">LinkedIn</a>
-    <a href="Loki_Resume.pdf" download class="resume-button">Download My Resume</a>
-
-
+    <pre class="green">thala@aws-admin:~$</pre> <span class="white">links</span>
+    <p class="output">
+      <a href="https://github.com/lokeshvenkat30" target="_blank">GitHub</a> |
+      <a href="https://www.linkedin.com/in/lokesh-s-v-48444814a/" target="_blank">LinkedIn</a><br>
+      <a href="Loki_Resume.pdf" download class="resume">Download Resume</a>
+    </p>
   </div>
 </body>
 </html>
