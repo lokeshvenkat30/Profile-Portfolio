@@ -1,51 +1,56 @@
 body {
-  background-color: #000;
-  color: #33ff33;
-  font-family: 'Courier New', Courier, monospace;
-  padding: 20px;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f4f4f4;
+  color: #222;
 }
 
-.terminal {
+.container {
   max-width: 800px;
-  margin: 50px auto;
-  background-color: #111;
-  border-radius: 10px;
+  margin: 40px auto;
   padding: 20px;
-  box-shadow: 0 0 10px #00ff00;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.08);
 }
 
-.green {
-  color: #00ff00;
-  font-weight: bold;
+header {
+  text-align: center;
+  margin-bottom: 30px;
 }
 
-.white {
-  color: #eee;
+h1 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+  color: #0073e6;
 }
 
-.highlight {
-  color: #00ffff;
-  font-weight: bold;
+.subtitle {
+  font-size: 1.2em;
+  color: #555;
 }
 
-.output {
-  color: #ccc;
-  margin-left: 20px;
+section {
+  margin-bottom: 30px;
+}
+
+h2 {
+  font-size: 1.5em;
+  color: #333;
   margin-bottom: 10px;
 }
 
-ul.output {
-  list-style: none;
-  padding-left: 30px;
+ul {
+  padding-left: 20px;
 }
 
-ul.output li::before {
-  content: "➜ ";
-  color: #00ff00;
+li {
+  margin-bottom: 8px;
 }
 
 a {
-  color: #00ffff;
+  color: #0073e6;
   text-decoration: none;
 }
 
@@ -53,16 +58,23 @@ a:hover {
   text-decoration: underline;
 }
 
-.resume {
+.resume-button {
   display: inline-block;
-  margin-top: 10px;
-  padding: 6px 12px;
-  background: #00ff00;
-  color: black;
-  border-radius: 5px;
+  margin-top: 15px;
+  padding: 10px 20px;
+  background-color: #0073e6;
+  color: white;
+  border-radius: 8px;
   font-weight: bold;
 }
 
-.resume:hover {
-  background: #00cc00;
+.resume-button:hover {
+  background-color: #005bb5;
+}
+
+footer {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 0.9em;
+  color: #888;
 }
